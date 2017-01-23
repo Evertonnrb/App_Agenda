@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_contatos"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="br.com.nrbsistemas.agendacontatos.Contatos"
+    android:weightSum="1"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:id="@+id/lnl_campo_nome">
+
+        <TextView
+            android:text="Nome"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <!--Nome -->
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:ems="10"
+            android:id="@+id/edt_nome"
+            android:hint="Digite o nome do contato" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="74dp"
+        android:weightSum="1"
+        android:id="@+id/lnl_campo_telefone">
+        <!--Telefone -->
+        <TextView
+            android:text="@string/txt_telefone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView5"
+            android:layout_weight="0.09" />
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="68dp"
+            android:weightSum="1">
+
+            <EditText
+                android:layout_width="182dp"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:id="@+id/edt_telefone"
+                android:inputType="phone"
+                android:hint="+00(00)0000-0000"
+                android:layout_weight="0.94" />
+
+            <Spinner
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:id="@+id/spn_tipo" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="76dp"
+        android:id="@+id/lnl_campo_email">
+        <!--Email -->
+        <TextView
+            android:text="@string/txt_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView6" />
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:weightSum="1">
+
+            <EditText
+                android:layout_width="175dp"
+                android:layout_height="wrap_content"
+                android:inputType="textEmailAddress|textPersonName"
+                android:ems="10"
+                android:id="@+id/edt_email"
+                android:hint="@string/exe_email"
+                android:layout_weight="0.63" />
+
+            <Spinner
+                android:layout_width="36dp"
+                android:layout_height="50dp"
+                android:id="@+id/spn_email"
+                android:layout_weight="0.37" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/lnl_campo_endereco">
+        <!--Endereço -->
+        <TextView
+            android:text="@string/txt_enderco"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView7" />
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="47dp"
+            android:weightSum="1">
+
+            <EditText
+                android:layout_width="260dp"
+                android:layout_height="wrap_content"
+                android:inputType="textPostalAddress"
+                android:ems="10"
+                android:id="@+id/edt_endereco"
+                android:hint="Rua: xxxxxx Nº 00000" />
+
+            <Spinner
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:id="@+id/spn_endereco" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/lnl_campo_datas">
+        <!--Datas Especiais -->
+        <TextView
+            android:text="@string/txt_datas"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView8" />
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="61dp"
+            android:weightSum="1">
+
+            <EditText
+                android:layout_width="262dp"
+                android:layout_height="wrap_content"
+                android:inputType="none|textPersonName|datetime|date"
+                android:ems="10"
+                android:id="@+id/edt_datas"
+                android:hint="12/12/2000" />
+
+            <Spinner
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:id="@+id/spn_datas" />
+        </LinearLayout>
+
+    </LinearLayout>
+        <!--Grupos -->
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/lnl_campo_grupos">
+
+        <TextView
+            android:text="@string/txt_grupos"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView9" />
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPersonName"
+                android:ems="10"
+                android:id="@+id/edt_grupos"
+                android:hint="Grupos / circulos de aminzade" />
+
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

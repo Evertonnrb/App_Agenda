@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">AgendaContatos</string>
+    <string name="txt_nome">Nome</string>
+    <string name="txt_telefone">Telefone</string>
+    <string name="txt_email">Email</string>
+    <string name="exe_email">exemplo@exemplo.com</string>
+    <string name="txt_enderco">Endereço</string>
+    <string name="txt_datas">Datas especiais</string>
+    <string name="txt_grupos">Grupos</string>
+    <!--Strings do menu-->
+    <string name="lbl_salvar">Salvar</string>
+    <string name="lbl_alterar">Alterar</string>
+    <string name="lbl_excluir">Excluir</string>
+</resources>
